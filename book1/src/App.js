@@ -1,5 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+
+class Hello extends React.Component{
+  render(){
+    return <span>hello</span>;
+  }
+}
+function Hello2 (){
+  return <p>1: hello</p>
+}
+const Hello3 = () =>{
+  return <p>2: hello</p>
+};
+const Hello4 = () => <p>3: hello</p>
+const Hello5 = () =>{
+  return (
+    <div>
+      <p>hello5</p>
+      <p>hello5</p>
+    </div>
+  );
+}
 
 function App() {
   return (
@@ -17,6 +39,11 @@ function App() {
         >
           Learn React
         </a>
+        <Hello></Hello>
+        <Hello2></Hello2>
+        <Hello3></Hello3>
+        <Hello4></Hello4>
+        <Hello5></Hello5>
       </header>
     </div>
   );
