@@ -22,28 +22,25 @@ const Hello5 = () =>{
     </div>
   );
 }
+const Hello6 = (props)=>{
+  const {age} = props.data;
+  return <p>6: hello {age}</p>
+}
+const data={
+  age:20,
+};
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
         <Hello></Hello>
         <Hello2></Hello2>
         <Hello3></Hello3>
         <Hello4></Hello4>
         <Hello5></Hello5>
+        <Hello6 data={data}></Hello6>
       </header>
     </div>
   );
