@@ -2,6 +2,7 @@ import logo from './logo.svg'
 import './App.css'
 import React from 'react'
 import ListEx from './ListEx'
+import Ex3 from './Ex3'
 
 const data1 = {
   text : "data1",
@@ -55,10 +56,15 @@ function App() {
         <Hello3></Hello3>
         <Hello4></Hello4>
         <Hello5></Hello5>
-        */
-        }
         <Hello6 data={data}></Hello6>
         <ListEx data={listData}></ListEx>
+        */
+       <Ex3>
+                  <ListEx data={listData}></ListEx>
+
+       </Ex3>
+      }
+      
       </header>
     </div>
   );
