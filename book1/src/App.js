@@ -1,8 +1,8 @@
 import logo from './logo.svg'
 import './App.css'
 import React from 'react'
-import ListEx from './ListEx'
-import Ex3 from './Ex3'
+import ListEx from './ex/ListEx'
+import Ex3 from './ex/Ex3'
 
 const data1 = {
   text : "data1",
@@ -60,8 +60,7 @@ function App() {
         <ListEx data={listData}></ListEx>
         */
        <Ex3>
-                  <ListEx data={listData}></ListEx>
-
+         <ListEx data={listData}></ListEx>
        </Ex3>
       }
       
